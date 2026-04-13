@@ -83,7 +83,7 @@ export default function App() {
     setLoadError("");
     setFileName("sample.csv");
     try {
-      const res = await fetch("/sample.csv");
+      const res = await fetch(`${import.meta.env.BASE_URL}sample.csv`);
       if (!res.ok) throw new Error("샘플을 불러오지 못했습니다.");
       const blob = await res.blob();
       const file = new File([blob], "sample.csv", { type: "text/csv" });
@@ -97,7 +97,7 @@ export default function App() {
     setLoadError("");
     setFileName("nq_kiwoom_sample.csv");
     try {
-      const res = await fetch("/nq_kiwoom_sample.csv");
+      const res = await fetch(`${import.meta.env.BASE_URL}nq_kiwoom_sample.csv`);
       if (!res.ok) throw new Error("키움 형식 샘플을 불러오지 못했습니다.");
       const blob = await res.blob();
       const file = new File([blob], "nq_kiwoom_sample.csv", { type: "text/csv" });
