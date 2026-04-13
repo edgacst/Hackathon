@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+*.local
+.env
+.env.*
+
+# 로컬에만 두는 대용량·민감 시세 CSV (저장소에 올리려면 이 줄 삭제)
+/나스닥데이터.csv
