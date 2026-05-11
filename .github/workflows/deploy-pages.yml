@@ -1,5 +1,6 @@
-# GitHub Pages 배포
-# Node 20 러너 경고 대응: setup-node 24 + 최신 액션 태그
+# GitHub Pages 배포 → https://edgacst.github.io/Hackathon/
+# Settings → Pages → Source: GitHub Actions
+# Node 24 + 최신 액션 (checkout v5, setup-node v6, …)
 
 name: Deploy to GitHub Pages
 
